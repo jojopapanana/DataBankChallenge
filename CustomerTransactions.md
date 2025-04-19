@@ -71,7 +71,7 @@ Query results:
 
 <img width="400" alt="Screenshot 2025-04-19 at 14 30 11" src="https://github.com/user-attachments/assets/57bae0a1-f3f3-4e89-853e-07690d70db7d" />
 
-What is the percentage of customers who increase their closing balance by more than 5%?
+5. What is the percentage of customers who increase their closing balance by more than 5%?
 ```sql
 with monthly_amount as(
 	select extract(month from txn_date) as transaction_month, customer_id, sum(case when txn_type like 'deposit' then txn_amount else -txn_amount end) as amount
