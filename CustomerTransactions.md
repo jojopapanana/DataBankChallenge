@@ -27,7 +27,7 @@ Query results:
 
 <img width="384" alt="Screenshot 2025-04-19 at 14 22 44" src="https://github.com/user-attachments/assets/ac07e2e2-154e-4992-af6f-492ca8e4a88a" />
 
-The average historical deposit count is **5.34** and the average amount is **2718.34** for all customers.
+Among all customers, the average historical deposit count is **5.34**, which means for each customer who has done minimum 1 deposit, they have done deposits on average 5 times, and the average amount is **2718.34**, which means for each customer who has done minimum 1 deposit, the average of their deposit amount is 2718.
 
 3. For each month - how many Data Bank customers make more than 1 deposit and either 1 purchase or 1 withdrawal in a single month?
 ```sql
