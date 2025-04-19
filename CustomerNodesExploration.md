@@ -10,6 +10,7 @@ Query result:
 
 There are **5 different nodes** in the Data Bank system.
 
+
 2. What is the number of nodes per region?
 ```sql
 select region_id, count(node_id) as node_count
@@ -23,6 +24,7 @@ Query result:
 <img width="225" alt="Screenshot 2025-04-19 at 14 08 38" src="https://github.com/user-attachments/assets/0ba4efc8-3beb-4f78-9671-8c7f2f36c07c" />
 
 There are 770 nodes in Australia, 735 nodes in America, 714 nodes in Africa, 665 nodes in Asia, and 616 nodes in Europe.
+
 
 3. How many customers are allocated to each region?
 ```sql
@@ -38,6 +40,7 @@ Query result:
 
 There are 110 customers in Australia, 105 customers in America, 102 customers in Africa, 95 customers in Asia, and 88 customers in Europe.
 
+
 4. How many days on average are customers reallocated to a different node?
 ```sql
 select round(avg(end_date - start_date), 2) as average_reallocated_days
@@ -50,6 +53,7 @@ Query result:
 <img width="221" alt="Screenshot 2025-04-19 at 14 12 14" src="https://github.com/user-attachments/assets/9f3da5e9-ca22-4530-bab9-ec04d1755987" />
 
 The customers are reallocated to a different node in an **average of 14.63 ~ 15 days**.
+
 
 5. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
 ```sql
